@@ -1,10 +1,16 @@
 * {
-    font-size: 20pt;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold
 }
 
-#label {
+#label:hover {
     text-decoration: underline;
     font-size: 20pt;
-    color: rgb(37, 172, 118)
+    color: rgb(14, 15, 109)
   }
+
+body {
+    background-image: url("1085082-cool-technology-backgrounds-1920x1080-download-free-2438296466.jpeg");
+    background-size: cover;
+    background-blend-mode: lighten;
+}
