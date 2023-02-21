@@ -1,1 +1,1 @@
-file:///Users/danhwang/cs198-99/project1-dhwang0623/index.html?team_name=76ers
+fullstack-decal-fa22.github.io
