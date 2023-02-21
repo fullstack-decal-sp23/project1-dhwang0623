@@ -2,13 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>
-        Daniel Hwang 
-    </title>
-    <h1>
-        Daniel Hwang 
-    </h1>
-    <link rel="stylefile" href="styles.css?v=1">
+    <meta name="author" content="Daniel Hwang">
+    <title>Daniel Hwang</title>
+    <h1>Daniel Hwang </h1>
+    <link rel="stylesheet" href="styles.css?v=1">
 </head>
 
 <br>
@@ -40,7 +37,7 @@
     <br>
     <hr>
 
-    <h4>Contacts</h4>
+    <h4>Contact</h4>
     <p>To be able to get in contact with me, please look below at one of the following.</p>
 
     <ol>
@@ -48,6 +45,36 @@
         <li>Through email: dannielhwang@berkeley.edu</li>
         <li>Through phone: 714-980-1130</li>
     </ol>
+
+    <br>
+    <hr>
+    <h4>Sports!</h4>
+    <form onsubmit="nbaTeamFunc()">
+        <label for="team_name">Favorite NBA Team (Ex: Nuggets):</label>
+        <input id="team-input" text="text" name="team_name" placeholder="Team">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function nbaTeamFunc() {
+            const favorite_nba_team = document.getElementById("team-input").value.toLowerCase();
+            nba_teams = ["celtics", "nets", "knicks", "76ers", "raptors", "bulls", "cavaliers", "pistons", "pacers", "bucks", "nuggets", "timberwolves", "thunder", "trail blazers", "jazz", "warriors", "clippers", "lakers", "suns", "kings", "hawks", "hornets", "heat", "magic", "wizards", "mavericks", "rockets", "grizzlies", "pelicans", "spurs"]
+            message = "That isn't a NBA team!"
+            if (favorite_nba_team === "lakers") {
+                message = "Good Choice! Time for Ring #17!"
+            }
+            if (favorite_nba_team === "warriors") {
+                message = "Dub Nation!"
+            }
+            if (favorite_nba_team === "celtics") {
+                message = "BOOOO"
+            } 
+            else if (nba_teams.includes(favorite_nba_team && favorite_nba_team != "lakers" && favorite_nba_team != "warriors" && favorite_nba_team != "celtics")) {
+                message = "Valid"
+            }
+            alert(message)
+        }
+    </script>
 </body>
 
 </html>
